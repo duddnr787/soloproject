@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="/css/signUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="sign-info">
+        <i class="fas fa-pencil-alt fa-3x"></i>
+        <p>채팅왕 회원가입</p>
+    </div>
+    <div class="info-enter">
+        <p>1 정보입력</p>
+        <div class="info-data">
+            <ul>
+                <li class="entername">
+                    <input type="text" class="text-field" name="name" placeholder="이름">
+                </li class="enterid">    
+                <li>
+                    <input type="text" class="text-field" name="id" placeholder="아이디">
+                </li>
+                <li class="enterpwd">
+                    <input type="password" class="text-field" name="pwd" placeholder="비밀번호">
+                </li>
+                <li class="phone">
+                    <select name="frontNumber" id="frontNumber" class="frontNumber" title="휴대폰 앞자리 선택" >
+                        <option value="휴대폰 번호 선택">휴대폰 번호 선택</option>
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                    </select>
+                    <span class="dash">-</span> 
+                    <input name="midNumber" type="text" id="midNumber" maxlength="4" title="휴대폰 중간자리 입력" /> 
+                    <span class="dash">-</span> 
+                    <input name="lastNumber" type="text" id="lastNumber" maxlength="4" title="휴대폰 뒷자리 입력" />
+                </li>
+                <li class="enterEmail">
+                    <input type="text" class="text-field" name="email" placeholder="이메일">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="info-agree">
+        <p>2 약관동의</p>
+            <div class="terms-cont">
+                <div class="all-agree">
+                    <label for="cb_agreeall"><input type="checkbox" id="cb_agreeall_1">전체 동의</label>
+                </div>
+                <div class="terms-cont-inner">
+                    <div class="check-set">
+                        <label for="cbProvision1"><input type="checkbox" id="cbProvision1" name="cbProvision1">채팅왕 이용약관 <span class="text__importance">(필수)</span></label>
+                        <a target="_blank" class="txt-view-all" href="#">전체보기</a>
+                    </div>
+
+                    <div class="check-set">
+                        <label for="cbFinance"><input type="checkbox" id="cbFinance" name="cbFinance">전자금융거래 이용약관 <span class="text__importance">(필수)</span></label>
+                        <a target="_blank" class="txt-view-all" href="#">전체보기</a>
+                    </div>
+
+                    <div class="check-set">
+                        <label for="cbIndividualInfo"><input name="cbIndividualInfo" type="checkbox" id="cbIndividualInfo" />개인정보 수집 및 이용 <span class="text__importance">(필수)</span></label>
+                        <a href="#" class="txt-view-all">내용보기</a>
+                    </div>
+
+                    <div class="check-set">
+                        <label for="cbThirdParty"><input name="cbThirdParty" type="checkbox" id="cbThirdParty"  />개인정보 제3자(판매자) 제공 <span class="text__importance">(선택)</span></label>
+                        <a href="#" class="txt-view-all">내용보기</a>
+                    </div>
+                    <div class="check-set">
+                        <label for="cbIndividualInfo_option"><input name="cbIndividualInfo_option" type="checkbox" id="cbIndividualInfo_option" />개인정보 수집 및 이용 <span class="text__importance">(선택)</span></label>
+                        <a href="#" class="txt-view-all">내용보기</a>
+                    </div>
+                    <div class="check-set">
+                        <label for="cbLocation"><input name="cbLocation" type="checkbox" id="cbLocation" />위치정보 이용약관 <span class="text__importance">(선택)</span></label>
+                        <a target="_blank" class="txt-view-all" href="#">전체보기</a>
+                    </div>
+                    <div class="check-set">
+                        <label for="cbPushAgreeYn"><input name="cbPushAgreeYn" type="checkbox" id="cbPushAgreeYn"  />혜택 알림 이메일, 문자, 앱 푸시 수신 <span class="text__importance">(선택)</span></label>
+                    </div>
+            </div>
+        </div>    
+    </div>
+    <div class="box_buttons">
+        <button type="button" class="button_submit">회원가입</button>
+        <button type="button"  class="button_cancel">취소</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+/* 전체 속성 */
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    width: 980px !important;
+    margin:0 auto;
+}
+button {
+    cursor: pointer;
+}
+/* 정보입력 속성  */
+.sign-info{
+    display: flex;
+    justify-content: left;
+    background-color: rgb(166, 212, 252);
+    margin-bottom: 50px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+/* .info-data{
+    display: flex;
+    flex-direction: column;
+} */
+.info-data ul{
+    margin-top: 0;
+}
+.info-data input{
+    padding: 4px 0 7px 11px;
+    width: 500px;
+}
+.info-data li{
+    padding-bottom: 20px;
+}
+.info-data .phone select{
+    height: 30px;
+    width: 157px;
+}
+.info-data .phone input{
+    width: 156px;
+}
+.sign-info i{
+    color: rgb(0, 68, 255);
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.sign-info p{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.info-enter{
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid #e3e3e3;
+}
+/* 동의 항목 속성 */
+.info-agree{
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.all-agree {
+    display: inline-block;
+    width: 440px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.all-agree label {
+    margin-left: 0px;
+    font: bold 17px Malgun Gothic,Dotum;
+}
+.all-agree input[type=checkbox] {
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+    margin: -4px 8px 0 0;
+}
+.terms-cont-inner{
+    width: 440px;
+}
+.check-set {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    font: bold 14px Malgun Gothic,Dotum;
+}
+.check-set label {
+    float: left;
+    margin-left: -3px;
+    letter-spacing: -1px;
+}
+.check-set input[type=checkbox] {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+label .text__importance {
+    font-size: 12px;
+    color: #9b9b9b;
+    font-weight: normal;
+}
+.check-set a.txt-view-all {
+    position: absolute;
+    right: 0;
+    font-size: 11px;
+    color: #999;
+}
+/* 회원가입 버튼 속성 */
+.box_buttons {
+    width: 440px;
+    margin: 70px 0 70px 440px;
+    /* margin-top: 70px;
+    margin-bottom: 70px; */
+    text-align: center;
+}
+.button_submit {
+    font-weight: bold;
+    display: inline-block;
+    width: 215px;
+    height: 48px;
+    padding: 0;
+    line-height: 48px;
+    font-size: 16px;
+    color: rgb(5, 3, 3);
+    background-color: rgb(166, 212, 252);
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+}
+.button_cancel {
+    font-weight: bold;
+    display: inline-block;
+    width: 215px;
+    height: 48px;
+    padding: 0;
+    line-height: 48px;
+    font-size: 16px;
+    color: #222;
+    background-color: #ffffff;
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+}
+p{
+    font-size: 50px;
+    color: gray;
+    margin-top: 0;
+    margin-left: 30px;
+    width: 400px;
+}
+.terms-cont{
+    width: 540px;
+    margin-left: 50px;
+}
+
+
+
+

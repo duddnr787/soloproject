@@ -1,0 +1,221 @@
+@import url(/css/media.css);
+
+/* 전체 속성 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+ul, li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+/* 헤더속성 */
+.board-wrap{
+  width:1000px;
+  margin: 100px auto;
+}
+.board-title strong{
+  font-size: 3rem;
+}
+.board-title p{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+.board-btn{
+  margin-top: 30px;
+  font-size: 0;
+  text-align: center;
+}
+.board-btn a{
+  display: inline-block;
+  min-width: 80px;
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid #ddd;;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  color:#000;
+}
+.board-btn a:first-child{
+  margin-left: 0px;
+}
+.board-btn a.on{
+  background: rgb(166, 212, 252);
+  color: #000;
+}
+/* 목록 속성 */
+.board-list{
+  width: 100%;
+  border-top: 2px solid #000;
+}
+.board-list > div{
+  border-bottom:1px solid #ddd;
+  font-size: 0;
+}
+.board-list > div.top{
+  border-bottom: 1px solid #999;
+}
+.board-list > div:last-child{
+  border-bottom: 2px solid #000;
+}
+.board-list > div > div{
+  display: inline-block;
+  font-size: 1.4rem;
+  vertical-align: middle;
+  text-align: center;
+  padding: 15px 0;
+}
+.board-list > div.top > div{
+  font-weight: 600;
+}
+.board-list .num{
+  width: 13%;
+}
+.board-list .title{
+  width: 61%;
+  text-align: left;
+}
+.board-list .top .title{
+  text-align: center;
+}
+.board-list .write{
+  width: 13%;
+}
+.board-list .date{
+  width: 13%;
+}
+/* 페이지 버튼 속성 */
+.board-page{
+  margin-top: 30px;
+  font-size: 0;
+  text-align: center;
+}
+.board-page a{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  border-left: 0;
+  vertical-align: middle;
+  line-height: 100%;
+}
+.board-page a.bt{
+  padding-top: 10px;
+  font-size: 1.2rem;
+}
+.board-page a.num{
+  padding-top: 9px;
+  font-size:1.4rem;
+}
+.board-page a.num.on{
+  border-color: rgb(166, 212, 252);
+  background-color: rgb(166, 212, 252);
+  color: #000;
+}
+.board-page a:first-child{
+  border-left: 1px solid #ddd;
+}
+/* view 페이지 속성 */
+.board_view{
+  width: 100%;
+  border-top:2px solid #000;
+}
+.board_view .title{
+  padding: 20px 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 2rem;
+}
+.board_view .info{
+  padding: 15px;
+  border: 1px solid #999;
+  font-size: 0;
+}
+.board_view .info dl{
+  position: relative;
+  padding: 0 20px;
+  display: inline-block;
+}
+.board_view .info dl:first-child{
+  padding-left: 0;
+}
+.board_view .info dl dt,
+.board_view .info dl dd{
+  display: inline-block;
+  font-size: 1.4rem;
+}
+.board_view .info dl dd{
+  margin-left: 10px;
+  color: #777;
+}
+.board_view .cont{
+  padding: 15px;
+  border-bottom: 1px solid #000;
+  line-height: 160%;
+  font-size: 1.4rem;
+}
+/* 등록 페이지 속성  */
+.board_write{
+  border-top: 2px solid #000;
+}
+.board_write .title,
+.board_write .info{
+  padding:15px
+}
+.board_write .info{
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #000;
+  font-size: 0;
+}
+.board_write .title{
+  font-size: 0;
+}
+.board_write .cont{
+  border-bottom: 1px solid #000;
+}
+.board_write textarea{
+  display: block;
+  width: 100%;
+  height: 300px;
+  padding: 15px;
+  border: 0;
+  resize: vertical;
+}
+.board_write .title dt,
+.board_write .title dd,
+.board_write .info dt,
+.board_write .info dd{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.4rem;
+}
+.board_write .title dt,
+.board_write .info dt{
+  width: 100px;
+}
+.board_write .title dd{
+  width: calc(100% - 100px);
+}
+.board_write .title input[type="text"],
+.board_write .info input[type="text"],
+.board_write .info input[type="password"]{
+  padding: 10px;
+}
+.board_write .title input[type="text"]{
+  width: 80%;
+}
+.board_wrtie .title dl{
+  font-size: 0;
+}
+.board_write .info dl{
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
